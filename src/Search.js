@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import "./Search.css";
+
 export default function Search() {
   const [city, setCity] = useState(null);
   const [description, setDescription] = useState(null);
@@ -32,15 +34,19 @@ export default function Search() {
   }
 
   let form = (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="search"
-        placeholder="🌍 Search City"
-        onChange={showWeather}
-      />
-      <button onClick={handleSubmit}>👀</button>
-      <button>📍</button>
-    </form>
+    <header className="App-header">
+      <form onSubmit={handleSubmit}>
+        <input
+          type="search"
+          placeholder="🌍 Search City"
+          className="form-control"
+          onChange={showWeather}
+        />
+        <button onClick={handleSubmit}>👀</button>
+        <button>📍</button>
+        <span className="date-time">Mon 9. Aug ⏰ 12:03</span>
+      </form>
+    </header>
   );
 
   let weatherIcon = `http://openweathermap.org/img/wn/${icon}@2x.png`;
@@ -50,14 +56,20 @@ export default function Search() {
       <div>
         {form}
         <ul>
-          <li>{city}</li>
-          <li>{description}</li>
+          <li>
+            <h1>{city}</h1>
+          </li>
+          <li>
+            <h6>{description}</h6>
+          </li>
           <li>
             <img src={weatherIcon} alt={description} />
           </li>
-          <li>{temperature}°C</li>
-          <li>Humidity: {humidity}%</li>
-          <li>Wind: {wind}km/h</li>
+          <li>
+            <h1 className="degrees">{temperature}°C</h1>
+          </li>
+          <li className="humidity-wind">Humidity: {humidity}%</li>
+          <li className="humidity-wind">Wind: {wind}km/h</li>
         </ul>
       </div>
     );

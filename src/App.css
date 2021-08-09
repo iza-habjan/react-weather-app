@@ -3,11 +3,80 @@
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+}
+
+button {
+  background-color: #fcc97d;
+  border-color: #f8f1e6;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.075);
+}
+
+button:hover {
+  transition: all 200ms ease;
+  background-color: #f8f1e6;
+}
+
+.select-degrees {
+  position: relative;
+  font-size: 20px;
+  top: -3px;
+  color: #f7724a;
+}
+
+.big-icon {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.small-icon {
+  width: 35px;
+  top: -5px;
+}
+
+.forecast-temperature {
+  color: #a74bbf;
+  font-size: 18px;
+}
+
+.container {
+  margin: 0;
+  padding: 10px 5px;
+}
+
+.body-container {
+  max-width: 450px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f7fbff;
+  border-style: solid;
+  border-color: #596bca;
+  box-shadow: 2px 2px 7px #cccccc;
+}
+
+#description {
+  font-size: 20px;
+}
+
+#celsius,
+#fahrenheit {
+  text-decoration: none;
+  color: #f7724a;
+}
+
+#celsius:hover,
+#fahrenheit:hover {
+  color: #a74bbf;
+}
+
+#celsius.selected,
+#fahrenheit.selected {
+  color: #a74bbf;
 }

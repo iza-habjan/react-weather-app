@@ -1,0 +1,23 @@
+footer {
+  font-size: 12px;
+  margin-top: 25px;
+  color: #424b5c;
+  text-align: center;
+}
+
+.common-font {
+  font-family: monospace;
+}
+
+.link {
+  text-decoration: none;
+  color: #59657b;
+}
+.link:hover {
+  color: #2c87d1;
+}
+
+.icons-made-by {
+  font-size: 10px;
+  color: #424b5c;
+}
