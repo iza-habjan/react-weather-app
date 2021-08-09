@@ -42,8 +42,13 @@ export default function Search() {
           className="form-control"
           onChange={showWeather}
         />
-        <button onClick={handleSubmit}>👀</button>
-        <button>📍</button>
+        <input
+          type="submit"
+          value="👀"
+          className="button"
+          onClick={handleSubmit}
+        />
+        <input type="submit" value="📍" className="button" />
         <span className="date-time">Mon 9. Aug ⏰ 12:03</span>
       </form>
     </header>

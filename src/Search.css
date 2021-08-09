@@ -21,7 +21,7 @@
   padding-left: 10px;
 }
 
-button {
+.button {
   background-color: #fcc97d;
   border-color: #f8f1e6;
   border-style: solid;
@@ -29,7 +29,7 @@ button {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.075);
 }
 
-button:hover {
+.button:hover {
   transition: all 200ms ease;
   background-color: #f8f1e6;
 }
