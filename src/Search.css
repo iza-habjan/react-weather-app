@@ -55,6 +55,26 @@ h1 {
   top: 14px;
 }
 
+.celsius,
+.fahrenheit {
+  text-decoration: none;
+  color: #f7724a;
+}
+
+.celsius:hover,
+.fahrenheit:hover {
+  color: #a74bbf;
+}
+
+.celsius.selected,
+.fahrenheit.selected {
+  color: #a74bbf;
+}
+
+.divider {
+  color: #f7724a;
+}
+
 h6 {
   color: #1bb1ab;
   margin-bottom: 0px;
