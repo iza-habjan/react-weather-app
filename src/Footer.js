@@ -8,7 +8,7 @@ export default function Footer() {
       👩🏻‍💻 & 👩🏻‍🎨 with ♥︎ in Berlin by{" "}
       <a
         className="link"
-        href="https://www.shecodes.io/students/295-iza-habjan"
+        href="https://elegant-almeida-1182c1.netlify.app/"
         target="_blank"
         rel="noreferrer"
       >
@@ -22,30 +22,6 @@ export default function Footer() {
       >
         <span> / GitHub </span>
       </a>{" "}
-      <div>
-        <span className="icons-made-by">
-          Icons made by{" "}
-          <a
-            className="link"
-            href="https://www.freepik.com"
-            title="Freepik"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Freepik{" "}
-          </a>
-          from{" "}
-          <a
-            className="link"
-            href="https://www.flaticon.com/"
-            title="Flaticon"
-            target="_blank"
-            rel="noreferrer"
-          >
-            www.flaticon.com
-          </a>
-        </span>
-      </div>
     </footer>
   );
 }
