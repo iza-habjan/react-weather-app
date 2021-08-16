@@ -16,7 +16,7 @@ export default function WeatherInfo(props) {
           <h6>{props.data.description}</h6>
         </li>
         <li>
-          <img src={props.data.icon} alt={props.data.description} />
+          <img src={props.data.iconUrl} alt={props.data.description} />
         </li>
         <li>
           <h1 className="degrees">{props.data.temperature}°C</h1>
