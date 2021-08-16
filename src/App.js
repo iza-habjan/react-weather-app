@@ -1,11 +1,11 @@
 import "./App.css";
-import Search from "./Search";
+import Weather from "./Weather";
 import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App body-container">
-      <Search defaultCity="Munich" />
+      <Weather defaultCity="Munich" />
       <Footer />
     </div>
   );
