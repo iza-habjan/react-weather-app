@@ -7,7 +7,7 @@ export default function WeatherIcon(props) {
   const thunderstormRain = "200-232-thunderstorm-rain";
   const thunderstorm = "210-221-thunderstorm";
   const dust = "731-761-dust";
-  
+
   const codeMapping = {
     800: "800-clear-sky",
     801: "801-few-clouds",
@@ -67,7 +67,12 @@ export default function WeatherIcon(props) {
 
   return (
     <div>
-      <img src={`images/${codeMapping[props.code]}.svg`} alt={props.alt} />
+      <img
+        src={`images/${codeMapping[props.code]}.svg`}
+        alt={props.alt}
+        width={props.width}
+        className="big-icon"
+      />
     </div>
   );
 }

@@ -2,13 +2,13 @@ import "./App.css";
 import Weather from "./Weather";
 import Footer from "./Footer";
 
-function App() {
+import "./App.css";
+
+export default function App() {
   return (
-    <div className="App body-container">
-      <Weather defaultCity="Munich" />
+    <div className="body-container">
+      <Weather defaultCity="Ljubljana" />
       <Footer />
     </div>
   );
 }
-
-export default App;

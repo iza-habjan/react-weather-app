@@ -1,0 +1,63 @@
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 94px;
+  text-align: center;
+  color: #e5e5e5;
+  padding: 30px 0 20px 0;
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  color: #c4c4c4;
+}
+
+.big-icon {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.degrees {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 94px;
+  color: #e5e5e5;
+}
+
+.celsius,
+.fahrenheit,
+.divider {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  color: #e5e5e5;
+}
+
+.humidity-wind {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  color: #c4c4c4;
+}
+
+.humidity-icon,
+.wind-icon {
+  width: 70px;
+}

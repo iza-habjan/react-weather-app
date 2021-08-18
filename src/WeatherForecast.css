@@ -1,0 +1,17 @@
+.WeatherForecast {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+.WeatherForecast img {
+  width: 100px;
+}
+
+.WeatherForecast-min {
+  opacity: 0.6;
+  margin-left: 10px;
+}
