@@ -17,29 +17,33 @@ export default function WeatherTemperature(props) {
 
   if (unit === "celsius") {
     return (
-      <li>
+      <div>
         <h1 className="degrees">{props.celsius}</h1>
         <span>
           °C <span className="divider"> | </span>
-          <a href="/#" className="fahrenheit" onClick={displayFahrenheit}>
-            °F
-          </a>
+          <span>
+            <a href="/#" className="fahrenheit" onClick={displayFahrenheit}>
+              °F
+            </a>
+          </span>
         </span>
-      </li>
+      </div>
     );
   } else {
     let fahrenheit = (props.celsius * 9) / 5 + 32;
     return (
-      <li>
+      <div>
         <h1 className="degrees">{Math.round(fahrenheit)}</h1>
         <span>
           <a href="/#" className="celsius" onClick={displayCelsius}>
             °C
           </a>{" "}
+        </span>
+        <span>
           <span className="divider"> | </span>
           °F
         </span>
-      </li>
+      </div>
     );
   }
 }

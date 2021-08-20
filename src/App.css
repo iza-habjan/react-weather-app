@@ -1,14 +1,10 @@
 .body-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 1000px;
+  justify-content: center;
+  
   margin: 50px auto;
   padding: 20px;
-  background-color: rgba(20, 43, 125, 0.58);
-  border: solid #142b7d;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Roboto", sans-serif;
 }
 

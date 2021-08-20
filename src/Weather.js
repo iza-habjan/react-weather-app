@@ -46,7 +46,7 @@ export default function Weather(props) {
 
   if (weatherData.loaded) {
     return (
-      <div>
+      <div className="Weather">
         <header className="App-header">
           <form onSubmit={handleSubmit}>
             <ul className="search-row">
