@@ -5,9 +5,7 @@ import FormattedDate from "./FormattedDate";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
-import "./WeatherDate.css";
-import "./App.css";
-import "./WeatherInfo.css";
+import "./Weather.css";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -47,7 +45,7 @@ export default function Weather(props) {
   if (weatherData.loaded) {
     return (
       <div className="Weather">
-        <header className="App-header">
+        <header>
           <form onSubmit={handleSubmit}>
             <ul className="search-row">
               <li>

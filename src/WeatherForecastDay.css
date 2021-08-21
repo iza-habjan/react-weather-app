@@ -1,0 +1,8 @@
+.WeatherForecastDay {
+  padding-left: 15px;
+}
+
+.WeatherForecast-min {
+  opacity: 0.7;
+  padding-left: 10px;
+}

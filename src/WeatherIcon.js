@@ -71,7 +71,6 @@ export default function WeatherIcon(props) {
         src={`images/${codeMapping[props.code]}.svg`}
         alt={props.alt}
         width={props.width}
-        className="big-icon"
       />
     </div>
   );

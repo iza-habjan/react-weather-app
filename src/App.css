@@ -1,44 +1,15 @@
-.body-container {
+:root {
+  --main-font: "Roboto", sans-serif;
+  --background-color: rgba(20, 43, 125, 0.41);
+  --input-background-color: rgba(20, 43, 125, 0.55);
+  --border-color: rgba(20, 43, 125, 0.6);
+  --primary-font-color: #e5e5e5;
+}
+
+.App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  
-  margin: 50px auto;
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-}
-
-.small-icon {
-  width: 35px;
-  top: -5px;
-}
-
-.forecast-temperature {
-  color: #a74bbf;
-  font-size: 18px;
-}
-
-.container {
-  margin: 0;
-  padding: 10px 5px;
-}
-
-#description {
-  font-size: 20px;
-}
-
-#celsius,
-#fahrenheit {
-  text-decoration: none;
-  color: #f7724a;
-}
-
-#celsius:hover,
-#fahrenheit:hover {
-  color: #a74bbf;
-}
-
-#celsius.selected,
-#fahrenheit.selected {
-  color: #a74bbf;
+  align-items: center;
+  font-family: var(--main-font);
+  margin: 30px auto;
 }

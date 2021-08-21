@@ -1,4 +1,5 @@
-import "./App.css";
+import React from "react";
+
 import Weather from "./Weather";
 import Footer from "./Footer";
 
@@ -6,7 +7,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="container body-container">
+    <div className="App">
       <Weather defaultCity="Ljubljana" />
       <Footer />
     </div>

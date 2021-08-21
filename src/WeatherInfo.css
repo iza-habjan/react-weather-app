@@ -1,60 +1,33 @@
-ul {
-  list-style: none;
-}
-
 h1 {
   text-transform: capitalize;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 80px;
-  line-height: 94px;
+  font-size: 60px;
   text-align: center;
-  color: #e5e5e5;
-  padding: 30px 0 20px 0;
+  color: var(--primary-font-color);
+  padding-top: 15px;
 }
 
 h6 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
-  color: #c4c4c4;
+  color: var(--primary-font-color);
+  opacity: 0.8;
 }
 
-.big-icon {
-  width: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.row {
+  align-items: center;
 }
 
-.degrees {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 80px;
-  line-height: 94px;
-  color: #e5e5e5;
-}
-
-.celsius,
-.fahrenheit,
-.divider {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 35px;
-  color: #e5e5e5;
+.col {
+  display: flex;
+  justify-content: center;
 }
 
 .humidity-wind {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 300;
-  font-size: 30px;
-  color: #c4c4c4;
+  font-size: 25px;
+  color: var(--primary-font-color);
 }
 
 .humidity-icon,
