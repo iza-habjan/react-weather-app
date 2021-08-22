@@ -13,3 +13,7 @@
   font-family: var(--main-font);
   margin: 30px auto;
 }
+
+@media 768 {
+  
+}

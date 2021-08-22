@@ -20,14 +20,20 @@ export default function WeatherTemperature(props) {
       <div>
         <h1 className="degrees">
           {props.celsius}
-          <span>
-            °C <span className="divider"> | </span>
+          <div className="c-f">
             <span>
-              <a href="/" className="fahrenheit" onClick={displayFahrenheit}>
-                °F
-              </a>
+              °C <span className="divider"> | </span>
+              <span>
+                <a
+                  href="/"
+                  className="fahrenheit selected"
+                  onClick={displayFahrenheit}
+                >
+                  °F
+                </a>
+              </span>
             </span>
-          </span>
+          </div>
         </h1>
       </div>
     );
@@ -37,15 +43,17 @@ export default function WeatherTemperature(props) {
       <div>
         <h1 className="degrees">
           {Math.round(fahrenheit)}
-          <span>
-            <a href="/" className="celsius" onClick={displayCelsius}>
-              °C
-            </a>
-          </span>
-          <span>
-            <span className="divider"> | </span>
-            °F
-          </span>
+          <div className="c-f">
+            <span>
+              <a href="/" className="celsius selected" onClick={displayCelsius}>
+                °C
+              </a>
+            </span>
+            <span>
+              <span className="divider"> | </span>
+              °F
+            </span>
+          </div>
         </h1>
       </div>
     );

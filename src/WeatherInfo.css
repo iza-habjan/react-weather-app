@@ -1,3 +1,7 @@
+.WeatherInfo {
+  padding: 15px 100px 25px 100px;
+}
+
 h1 {
   text-transform: capitalize;
   font-weight: 500;
@@ -22,6 +26,10 @@ h6 {
 .col {
   display: flex;
   justify-content: center;
+}
+
+.humidity {
+  padding-left: 40px;
 }
 
 .humidity-wind {

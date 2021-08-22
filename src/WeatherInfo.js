@@ -23,7 +23,7 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col">
           <div>
-            <div className="humidity-wind">
+            <div className="humidity-wind humidity">
               {props.data.humidity}
               <img
                 src="images/humidity.svg"
