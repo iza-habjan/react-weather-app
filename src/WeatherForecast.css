@@ -1,7 +1,7 @@
 .WeatherForecast {
   font-weight: 300;
   color: var(--primary-font-color);
-  padding: 0 50px 30px 30px;
+  padding: 0 30px 30px 30px;
   font-size: 20px;
   text-align: center;
 }

@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo container">
       <h1>{props.data.city}</h1>
       <h6>{props.data.description}</h6>
-      <div class="row">
+      <div className="row">
         <div className="col">
           <WeatherIcon
             code={props.data.icon}

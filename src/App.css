@@ -14,6 +14,13 @@
   margin: 30px auto;
 }
 
-@media 768 {
-  
+@media (max-width: 768px) {
+  .search-row {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .date-time {
+    display: none;
+  }
 }
