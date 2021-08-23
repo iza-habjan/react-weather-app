@@ -5,6 +5,7 @@
   --border-color: rgba(20, 43, 125, 0.6);
   --primary-font-color: #e5e5e5;
 }
+
 * {
   outline: none;
 }
@@ -19,6 +20,6 @@
 
 @media (max-width: 768px) {
   .date-time {
-    display: none;
+    justify-content: left;
   }
 }
