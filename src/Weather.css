@@ -41,9 +41,13 @@
   background-color: var(--border-color);
 }
 
+.search {
+  justify-content: flex-start;
+}
 .date-time {
   font-weight: 300;
   font-size: 22px;
   color: var(--primary-font-color);
   padding-bottom: 2px;
+  justify-content: flex-end;
 }
