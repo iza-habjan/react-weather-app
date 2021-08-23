@@ -8,7 +8,10 @@ h1 {
   font-size: 60px;
   text-align: center;
   color: var(--primary-font-color);
-  padding-top: 15px;
+}
+
+.cityName {
+  padding-top: 25px;
 }
 
 h6 {

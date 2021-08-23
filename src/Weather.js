@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 
 import FormattedDate from "./FormattedDate";
@@ -12,6 +12,8 @@ export default function Weather(props) {
 
   const [weatherData, setWeatherData] = useState({ loaded: false });
 
+  const searchButton = useRef(null);
+
   function getWeatherData(response) {
     setWeatherData({
       loaded: true,
@@ -24,6 +26,10 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
     });
+
+    setCity("");
+
+    if (searchButton.current) searchButton.current.focus();
   }
 
   function search() {
@@ -54,10 +60,16 @@ export default function Weather(props) {
                   placeholder="  🌍  Search City"
                   className="form-control"
                   onChange={handleCitySearch}
+                  value={city}
                 />
               </div>
               <div className="col-1">
-                <input type="submit" value=" 👀 " className="button" />
+                <input
+                  type="submit"
+                  value=" 👀 "
+                  className="button"
+                  ref={searchButton}
+                />
               </div>
               <div className="col-1">
                 <input type="submit" value=" 📍 " className="button" />

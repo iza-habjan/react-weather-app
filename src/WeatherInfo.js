@@ -8,7 +8,7 @@ import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo container">
-      <h1>{props.data.city}</h1>
+      <h1 className="cityName">{props.data.city}</h1>
       <h6>{props.data.description}</h6>
       <div className="row">
         <div className="col">
