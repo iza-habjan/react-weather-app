@@ -19,4 +19,22 @@
 }
 
 @media (max-width: 768px) {
+  .Weather {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .App {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .search-row {
+    padding: 2px;
+  }
+
+  .WeatherForecast {
+    margin: 0 auto;
+    display: flex;
+  }
 }
